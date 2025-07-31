@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 2nd Anniversary ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Password Introduction Page -->
+    <div id="intro-page" class="page active">
+        <!-- Lily Background Images -->
+        <div class="intro-lily-left"></div>
+        <div class="intro-lily-right"></div>
+        
+        <div class="intro-container">
+            <div class="intro-form-container">
+                <h1>Enter Anniversary Date</h1>
+                <p>Please enter the date to continue</p>
+                
+                <div class="date-input-container">
+                    <label class="date-input-label" for="password-input">DD/MM/YYYY</label>
+                    <input type="date" id="password-input">
+                </div>
+                
+                <div id="error-msg" class="hidden">Try our special date! ❤️</div>
+            </div>
+            
+            <!-- Success Message (initially hidden) -->
+            <div id="success-message" class="success-message hidden">
+                <h2>Correct! Galing ah!</h2>
+                <p>Please proceed to the next step.</p>
+                <button id="continue-btn" class="continue-btn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Anniversary Page with Navigation -->
+    <div id="main-page" class="page hidden">
+        <!-- Landing Page Lily Backgrounds -->
+        <div class="landing-lily-left"></div>
+        <div class="landing-lily-right"></div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h3>For my liloves ❤️</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gift-section" class="nav-link" data-section="gift">Gift</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#memories-section" class="nav-link" data-section="memories">Memories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#letters-section" class="nav-link" data-section="letters">Letters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quiz-section" class="nav-link" data-section="quiz">Quiz</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home-section" class="content-section">
+            <div class="section-container">
+                <header class="countdown-section">
+                    <h1>Happy 2nd Anniversary! ❤️</h1>
+                    <div id="countdown-timer">
+                        <!-- Timer will be populated by JavaScript -->
+                        <div class="time-unit">
+                            <span id="days">0</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours">0</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">0</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">0</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                    <p id="countdown-text">We've been together for:</p>
+                </header>
+                <div class="welcome-content">
+                    <h2>Welcome to my little gift celebrating us!!</h2>
+                    <p>I made this for us! I hope you like it. You can explore the website through the navigation above or you can just scroll down 
+                        and see everything. Each section holds our special memories and I also have surprises for you! </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gift Section -->
+        <section id="gift-section" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1>Your Special Gift</h1>
+                    <p>I prepared something for you!</p>
+                </div>
+                <div class="gift-container">
+                    <div id="gift-box" class="gift-box">
+                        <div class="gift-lid"></div>
+                        <div class="gift-base"></div>
+                        <div class="gift-ribbon-vertical"></div>
+                        <div class="gift-ribbon-horizontal"></div>
+                        <div class="gift-bow"></div>
+                    </div>
+                    <p class="gift-instruction">Click the gift to open! 🎁</p>
+                </div>
+                
+                <!-- Hidden Gift Message -->
+                <div id="gift-message" class="gift-message hidden">
+                    <h2>Happy 2nd Anniversary, My Love! 💕</h2>
+                    <p>
+                        Hello my liloves! In the past 2 years, I have never felt happier and complete in my life. We spent tons of time together growing, 
+                        learning, and falling even more in love with each other. I am really grateful for having you. Having you in my life, it always makes me 
+                        feel like the luckiest person alive.
+                    </p>
+                    <p>
+                        Spending time with you feels like a gift. Thank you for being patient with me for 2 years kahit malala ako mang rage bait! Pero kahit 
+                        nakakainis ako and very pasaway, you still choose to be patient and loving towards me in the end. Kaya lablab kita ih hehehe.
+                    </p>
+                    <p>
+                        Please take care of yourself always. I am always gonna be here for you, to support you, and cherish you my love love! I hope you like this 
+                        little project I made for you!
+                    </p>
+                    <p>I love you more than words can express. I hope we can continue this forever. Wala break break okay! ❤️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories-section" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1>My favorite pictures of us together!</h1>
+                    <p>Every year we've been together!</p>
+                </div>
+                
+                <!-- 2023 Photos -->
+                <div class="year-section">
+                    <h3>2023 - Where It All Started!</h3>
+                    <div class="photo-grid">
+                        <!-- Replace these with your actual photos -->
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8526.JPG" alt="Memory 1">
+                            <p>Our first birthday date ❤️</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8527.JPG" alt="Memory 2">
+                            <p>Another pic of the birthday date!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8528.JPG" alt="Memory 3">
+                            <p>Angel Lian hehehe</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8529.JPG" alt="Memory 4">
+                            <p>Uniform pictures together!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8530.JPG" alt="Memory 5">
+                            <p>Coffee date hehe</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8531.JPG" alt="Memory 6">
+                            <p>Our first formal errand!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8532.JPG" alt="Memory 7">
+                            <p>Lian Burrito!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8533.JPG" alt="Memory 8">
+                            <p>With meow meow hehe</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8534.JPG" alt="Memory 9">
+                            <p>With Hello Kitty!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2023/immich-20250731_211538/IMG_8535.JPG" alt="Memory 10">
+                            <p>Unli Chicken!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 Photos -->
+                <div class="year-section">
+                    <h3>2024 - Growing Stronger</h3>
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/1718643683541.JPEG" alt="Memory 11">
+                            <p>First professional shooting!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_1374.jpg" alt="Memory 12">
+                            <p>Your legality!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_1925.jpg" alt="Memory 13">
+                            <p>Meryenda Time!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_2261.jpg" alt="Memory 14">
+                            <p>First pair of Crocs!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_2733.jpg" alt="Memory 15">
+                            <p>First time checking in!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_5022.jpg" alt="Memory 16">
+                            <p>Recognition + Surprise cake!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_6011.jpg" alt="Memory 17">
+                            <p>Graduation picture!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_6322.JPG" alt="Memory 18">
+                            <p>First time swimming!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_6823.jpg" alt="Memory 19">
+                            <p>Our first Valentines Date</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2024/IMG_7396.jpg" alt="Memory 20">
+                            <p>Our first (technically second) concert in AU!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025 Photos -->
+                <div class="year-section">
+                    <h3>2025 - Our Future</h3>
+                    <div class="photo-grid">
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_0311.JPG" alt="Memory 21">
+                            <p>My pretty baby on our second Valentines Date!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/8842608db6aec0785073aa37bc1eef6d.JPEG" alt="Memory 22">
+                            <p>House hangout with baby big bert!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/fxn 2025-03-21 172956.268.JPG" alt="Memory 23">
+                            <p>My beautiful baby!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_5470.jpg" alt="Memory 24">
+                            <p>Study session together!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_6051.jpg" alt="Memory 25">
+                            <p>Our fitness journey!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_7465.jpg" alt="Memory 26">
+                            <p>Concert in MOA Arena!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_7800.jpg" alt="Memory 27">
+                            <p>Tagaytay Trip!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_8248.jpg" alt="Memory 28">
+                            <p>Some of my gifts to you for our anniversary</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_9160.JPEG" alt="Memory 29">
+                            <p>My favorite pic of you in our trip to Batangas!</p>
+                        </div>
+                        <div class="photo-card">
+                            <img src="images/cute-images-2025/IMG_9531.JPG" alt="Memory 30">
+                            <p>First time kayaking!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letters Section -->
+        <section id="letters-section" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1>Open When... </h1>
+                    <p>Special messages for different moments!</p>
+                </div>
+                
+                <div class="letters-grid">
+                    <div class="letter-card" data-letter="sad">
+                        <h4>Open when you're sad</h4>
+                        <div class="letter-content hidden">
+                            <!-- Customize these messages -->
+                            <p>Hello, my love! I know it's hard for you right now, but always remember to not invalidate your own feelings okay! Embrace what you 
+                            feel right now, call me and tell me what you're thinking of and I'll make sure to comfort you!
+
+                            I'll always be here for you to have a shoulder to lean on. Always remember that every bagyo ay lumilipas and mags-shine ang sun again 😎 
+                            You are a strong person and I know you know that bebe! You got this okay! lablab ka namin nila bebe Gunter and other babies natin hehe ❤️</p>
+                        </div>
+                    </div>
+                    <div class="letter-card" data-letter="miss">
+                        <h4>Open when you miss me</h4>
+                        <div class="letter-content hidden">
+                            <p>I miss you so much more my baby! For now, hug mo muna sila bebe Sherby and sila bebe Blue for company! I hope to see you soon, bebe ko! 💕</p>
+                        </div>
+                    </div>
+                    <div class="letter-card" data-letter="laugh">
+                        <h4>Open when you want to laugh</h4>
+                        <div class="letter-content hidden">
+                            <p>Bakit palaging kulang ang mga tupa? Kasi kailangan nila ng two pa!!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1>How Well Do You Know Us?</h1>
+                    <p>Testing natin knowledge mo boi ( NO CHEATINGG !! )</p>
+                </div>
+                
+                <div class="quiz-container">
+                    <div id="quiz-container">
+                        <div class="quiz-question active" data-question="1">
+                            <h4>What was the first movie we watched together in my house?</h4>
+                            <!-- Customize these questions and answers -->
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="false">My Little Mermaid</button>
+                                <button class="quiz-option" data-correct="true">The Little Mermaid</button>
+                                <button class="quiz-option" data-correct="false">Tambobong Festival</button>
+                                <button class="quiz-option" data-correct="false">Little Mermaid</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="2">
+                            <h4>What's my favorite thing about you?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="true">Your outfits</button>
+                                <button class="quiz-option" data-correct="true">Your smile</button>
+                                <button class="quiz-option" data-correct="true">Your humor</button>
+                                <button class="quiz-option" data-correct="true">Your personality</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="3">
+                            <h4>Who loves the their significant other the most?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="true">Aaron</button>
+                                <button class="quiz-option" data-correct="false">Lian</button>
+                                <button class="quiz-option" data-correct="true">Aaron</button>
+                                <button class="quiz-option" data-correct="true">Both share the same feeling! (Mas mataas Aaron by 0.1%)</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="4">
+                            <h4>What's the name of the cactus stuffed toy I got you before?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="false">Coco</button>
+                                <button class="quiz-option" data-correct="false">Moshi</button>
+                                <button class="quiz-option" data-correct="false">Manju</button>
+                                <button class="quiz-option" data-correct="true">Manji</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="5">
+                            <h4>What was the color of the outfit we wore during our first anniversary?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="false">Brown</button>
+                                <button class="quiz-option" data-correct="false">Beige</button>
+                                <button class="quiz-option" data-correct="false">Red</button>
+                                <button class="quiz-option" data-correct="true">Maroon</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="6">
+                            <h4>How many kiss mark cut outs did you give me on August 7?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="false">2</button>
+                                <button class="quiz-option" data-correct="true">3</button>
+                                <button class="quiz-option" data-correct="false">4</button>
+                                <button class="quiz-option" data-correct="false">5</button>
+                            </div>
+                        </div>
+                        <div class="quiz-question hidden" data-question="7">
+                            <h4>What was the time when we started talking in Instagram notes?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="false">11:11pm</button>
+                                <button class="quiz-option" data-correct="true">11:22pm</button>
+                                <button class="quiz-option" data-correct="false">11:33pm</button>
+                                <button class="quiz-option" data-correct="false">11:44pm</button>
+                            </div>
+                        </div>
+                        <div id="quiz-result" class="hidden">
+                            <h4>Quiz Complete!</h4>
+                            <p id="quiz-score"></p>
+                            <p>You know us so well! ❤️</p>
+                            <button id="restart-quiz">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2023-∞ Ruzgal-Castañeda. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" class="modal-image" src="" alt="">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
